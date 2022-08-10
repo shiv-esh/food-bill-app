@@ -1,0 +1,13 @@
+show databases
+use mysql
+
+show 
+
+create table food_items(item_id int, item_name varchar(20), item_cost int)
+
+insert into food_items (item_id, item_name, item_cost) values(1,'dosa',30)
+insert into food_items (item_id, item_name, item_cost) values(2,'idly',10)
+insert into food_items (item_id, item_name, item_cost) values(3,'poori',50)
+insert into food_items (item_id, item_name, item_cost) values(4,'vada',30)
+
+select * from food_items

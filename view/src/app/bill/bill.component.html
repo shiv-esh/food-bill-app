@@ -1,0 +1,34 @@
+<div>
+    <h2>Bill</h2>
+<table class="table table-hover">
+    <thead>
+        
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Quantity</th>
+        <th>Remove</th>
+     
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of billItems">
+           
+            <td>{{item.item_name}}</td>
+            <td>{{item.item_cost}}</td>
+            <td>{{item.item_quantity}}</td>
+            <td>
+                <button type="button" class="btn btn-primary" (click)="onRemoveItem(item)">
+                    <span class="glyphicon glyphicon-remove">
+                    -
+                </span>
+                </button></td>
+         
+
+        </tr>
+    </tbody>
+    </table>
+
+</div>
+<div>
+    
+<p><b>Total Amount</b> {{total}}</p>
+</div>
